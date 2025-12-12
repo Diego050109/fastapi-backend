@@ -20,3 +20,8 @@ def db_check():
     with engine.connect() as conn:
         result = conn.execute(text("SELECT 1"))
         return {"db": result.scalar()}
+    
+@app.get("/test")
+def read_root():
+    return {"mensaje": "prueba2 🚀"}
+
