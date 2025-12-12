@@ -3,7 +3,7 @@ name: Deploy FastAPI Backend to AWS
 on:
   push:
     branches:
-      - main
+      - master
 
 env:
   ASG_NAME: "docker-asg"                 # 👈 nombre REAL de tu ASG
