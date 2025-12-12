@@ -53,6 +53,8 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
 
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
+
       - name: Refresh Auto Scaling Group
         run: |
           echo "Starting ASG Instance Refresh..."
